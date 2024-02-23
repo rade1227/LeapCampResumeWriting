@@ -1,14 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Playpen+Sans&family=Protest+Riot&display=swap');
 *
 {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     padding: 0;
-    margin-left: 20px;
+    margin-left: 0;
     color:black;
     scroll-behavior: smooth;
     text-decoration: none;
     list-style-type: none;
+
+}
+/* Heading  */
+.t , .t5, .t2 , .t1
+{
+    font-family: Oldenburg; 
+    font-weight: 300; 
+    font-size: 28px;
+    text-align: center;
+    filter: drop-shadow(0 2px 2px #00aeef);
 }
 
+
+ /*  Navigational bar */
 .container{
 
 width: 90%;
@@ -21,25 +35,26 @@ position: relative;
 
     
 .logo{
-    width: 200px;
+    width: 15%;
     cursor: pointer;
     height:100px;
 }
 .navbar{
-    font-size: 24px;
+    font-size: 22px;
     font-family:cursive ;
     position:absolute;
-    top: 50px;
+    margin: 0;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 100000;
-    width: 95%;
-    height: 90px;
+    width: 100%;
+    height: 12%;
     background:#fff;
     align-items: center;
     display: flex;
     justify-content: right;
-    border-top-left-radius: 70px;
+    border-radius: 10px;
     filter: drop-shadow(0 10px 10px #00aeef );
 }
 
@@ -53,9 +68,9 @@ position: relative;
     z-index: 2;
     align-items: center;
     display: flexbox;
-    /* justify-content: center; */
-   flex-direction: column;
-   text-align: center;
+    justify-content: center;  
+    flex-direction: column;
+   text-align: right;
 
 }
 
@@ -67,25 +82,29 @@ nav ul li{
     display: inline-block;
     list-style: none;
     justify-content: right;
-    margin: 0px 20px;
+    margin: 0px  20px;
+    font-size: 16px;
+    font-weight: 400;
+    
 }
 
 nav ul li a{ 
     text-decoration: none;
-   
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
 }
 .content h1{
     font-size: 60px;
-    font-weight: 100;
-    margin-top: 20px;
+    font-family: "Neuton";
+    font-weight:400;
+    margin-top: 2em;
     margin-bottom: 15px;
 
 }
 .content p{
     font-size: 20px;
     animation-delay: 0.5s;
+    font-family: "Neuton";
     
 }
 .content{
@@ -112,15 +131,14 @@ nav ul li a{
 .navbar ul li a:hover{
     transition: 0.5s;
     filter: drop-shadow(0 -5px 8px #00aeef );
-    
     font-weight: 600; 
 
-}
+} 
 
 
 .bgimg{
     width:40%;
-    height: 70%;
+    height: 60%;
     position: absolute;
     bottom: 0;
     right:5%;
@@ -172,14 +190,23 @@ nav ul li a{
     animation-delay: 0s;
   }
 
+  
+@media (max-width:700px) 
+{
+    navbar{
+        position: unset;
+    }
+    
+}
   /* ---------benefits of resume writing---------- */
   .content-why{
     position: relative;
-    width:1150px;
+    width:80%;
+    margin-left: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding:80px; */
+    padding:20px;
   }
   .content-why .whyimage{
     position: relative;
@@ -199,7 +226,7 @@ nav ul li a{
   }
   .content-why .text-box{
     z-index: 222;
-    padding: 40px;
+    padding: 40px 40px 40px 40px;
     background: rgba(0, 174, 239,0.2);
     backdrop-filter: blur(20px);
     max-width: 400px;
@@ -260,33 +287,34 @@ nav ul li a{
  /* resume swatches */
 .resume{
     width:100%;
-    height:60vh;
+    height:69vh;
     filter: drop-shadow(0 1px 1px #00aeef );
     overflow: hidden;
 }
 
 .resume .carousel{
-    width: 300px;
-    margin: 30px auto 0;
+    width: 250px;
+    margin: 20px auto 0;
     overflow: visible;
+    
 }
 .carousel img{
     -webkit-box-reflect: below 20px linear-gradient(rgba(255,255,255,0.1));
 }
 
 
-/* chronological resume, functional resume, combination resume, target resume */
-
+/* -------------footer----------------- */
 
 footer{
     width:100%;
     position: relative;
     bottom: 0;
     background: rgb(0, 174, 239, 70%);
-    border-top-left-radius: 125px;
-    font-size: 13px;
+    border-radius: 20px;
+    font-size: 14px;
     line-height: 15px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:"Neuton";
+    overflow: hidden;
 }
 .row{
     width:90%;
@@ -297,13 +325,14 @@ footer{
     justify-content: space-between;
 }
 .col{
-    flex-basis: 60%;
-    /* padding: 5px; */
+    flex-basis: 25%;
+    padding: 5px;
 }
 .logo1{
     width:110px;
     height:80px;
     margin-bottom: 20px;
+
 }
 
 .col h3{
@@ -338,13 +367,9 @@ footer{
     }
 }
 
-.col:nth-child(4){
-    flex-basis: 10%;
-}
-
  /* blog */
  #blog{
-    padding: 30px 0;
+    padding: 20px 0;
 
   }
   .blog-list{
@@ -356,6 +381,7 @@ footer{
     text-wrap: wrap;
     text-align: justify;
     margin-right: 20px;
+    
 
   }
   .container-1{
@@ -365,7 +391,7 @@ footer{
 
   .blog-list div{
     background:rgb(249, 248, 248);
-    padding: 30px;
+    padding: 20px 20px 20px 10px;
     font-size: 14px;
     font-weight: 300;
     border-top-left-radius: 40px;
@@ -374,8 +400,10 @@ footer{
   }
   .blog-list div img{
     margin-bottom: 30px;
-    width:270px;
-    height:200px;
+    /* width:200px;
+    height:150px; */
+    width:87%;
+    height:50%;
     
   }
   .blog-list a{
@@ -395,8 +423,12 @@ footer{
 /* copyright */
 .copyright{
     text-align: center;
-    padding:7px;
+    /* padding:5px; */
+    font-family: serif;
 }
+
+
+        /* resume price */
 
 .pricing-table{
     /* margin-top: 0px; */
@@ -469,32 +501,37 @@ footer{
     font-size: 20px;
 }
 
- /* logos animation  */
+ /* Brand/logos animation  */
 .scroll{
     position: relative;
     display: inline-block;
-    width: 100%;
-    height:30vh;
+    width: 90%;
+    height:20vh;
     overflow: hidden;
-    mask-image: linear-gradient(90deg,transparent,#00aeef 20%,#00aeef 80%,transparent)
+   
+    mask-image: linear-gradient(90deg,transparent,#00aeef 20%,#00aeef 80%,transparent);
+   
 }
 .scroll div{
+    margin-left: 20%;
     white-space: nowarp;
     animation: animate var(--t) linear infinite;
 }
 @keyframes animate
 {
     0%{
-        transform:translateX(100%);
+        transform:translateX(80%);
     }
     100%
     {
-        transform: translateX(-100%);
+        transform: translateX(-80%);
     }
 }
 .scroll img{
-    width:130px;
-    height: 90px;
+    padding: 10px 10px;
+    width:120px;
+    height: 80px;
+   
 }
             /* Contact/ queries */
            
@@ -510,25 +547,9 @@ footer{
  }
 .contact-right{
     flex-basis: 50%;
-    /* overflow: hidden; */
 }
-/* .contact-left p{
-    margin-top: 30px;
-}
-.contact-left p i{
-    color: #00aeef;
-    margin-right: 15px;
-    font-size: 25px;
-} */
-/* .social-icons{
-    margin-top: 30px;
-} */
+
 .social-icons a{
-    /* text-decoration: none;
-    font-size: 20px;
-    margin-right: 10px; */
-    /* display: inline-block; */
-    /* color: #00aeef; */
     transition: background 0.5s;
 }
 .social-icons a:hover{
@@ -581,3 +602,123 @@ form .btn2{
     overflow: hidden;
     position: relative;
     }
+    nav .fa-solid{
+        display:none;
+    }
+
+@media only screen and (max-width:940px)
+{
+    .content img
+    {
+        width:50%;
+        height:40%
+    }
+    .scroll div{
+        width:100%;
+        /* flex-wrap: wrap; */
+        height: 5vh;
+        padding:0;
+    }
+    .scroll img
+    {
+        width: 13%;
+        height:6vh;
+        padding:5%
+    }
+    
+    .contact-left
+    {
+    /* flex-basis: 20%; */
+    width: 70%;
+    margin-top:7px;
+    padding: 0;
+    opacity: 40%;
+     /* height: 20vh; */
+    /* align-items: center; */
+    }
+    .contact-left img{
+        width:200%;
+        height:50%
+    }
+    .contact-right form{
+        width:100%;
+    }
+    nav .fa-solid{
+        display:block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #fff;
+        position: fixed;
+        top:0;
+        right: -200px;
+        width: 200px;
+        height:70vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right .5s;
+        font-size: 20px;
+        font-family: "Times";
+    
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+        /* right:10px; */
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left:25px;
+        cursor: pointer;
+    }
+    .logo
+    {
+        width:35%;
+    }
+   
+
+}
+        /* WHATSAPP */
+.wasapp{ 
+        position: fixed;
+        bottom:20px;
+        right: 20px;
+        cursor: pointer;
+  }        
+
+
+    /* Responsive */
+
+
+/* @media screen and (max-width:750px) 
+{
+    footer{
+        bottom:unset;
+    }
+    col{
+        flex-basis: 100%;
+    
+    }
+    .content
+    {
+        margin-top: 100%;
+        /* font-size: 1px; 
+        background: #fff;
+    }
+    .content h1{
+        font-size: 16px;
+    }
+    .content p{
+        font-size: 12px;
+    }
+    .content img
+    {
+       width: 50%;
+       height:20%;
+    }}*/
+    
+   
+
+
+/* SWIPER */
