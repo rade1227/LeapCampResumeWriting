@@ -76,7 +76,7 @@ position: relative;
 
 nav{
     flex:1;
-    padding-left: 60px;
+    padding-left: 100px;
 }
 nav ul li{
     display: inline-block;
@@ -91,7 +91,7 @@ nav ul li{
 nav ul li a{ 
     text-decoration: none;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
 }
 .content h1{
     font-size: 60px;
@@ -352,7 +352,7 @@ footer{
     font-size: 20px;
     margin-left: 1px;
     display:inline-block;
-   width:35px;
+   width:30px;
     cursor:pointer;
 }
 
@@ -394,7 +394,7 @@ footer{
     padding: 20px 20px 20px 10px;
     font-size: 14px;
     font-weight: 300;
-    border-top-left-radius: 40px;
+    border-radius: 10px;
     text-decoration: none;
     transition: background 0.5s, transform 0.5s;
   }
@@ -402,8 +402,9 @@ footer{
     margin-bottom: 30px;
     /* width:200px;
     height:150px; */
-    width:87%;
+    width:90%;
     height:50%;
+    justify-content: center;
     
   }
   .blog-list a{
@@ -663,8 +664,9 @@ form .btn2{
         padding-top: 50px;
         z-index: 2;
         transition: right .5s;
-        font-size: 20px;
+        font-size: 22px;
         font-family: "Times";
+
     
     }
     nav ul li{
@@ -678,9 +680,15 @@ form .btn2{
         left:25px;
         cursor: pointer;
     }
+    nav .fa-solid
+    {
+        position: absolute;
+        right: 25px;
+    }
     .logo
     {
-        width:35%;
+        width:32%;
+        height:fit-content
     }
    
 
