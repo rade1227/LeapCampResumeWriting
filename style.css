@@ -615,6 +615,10 @@ form .btn2{
 
 @media only screen and (max-width:940px)
 {
+    .content
+    {
+        margin-top:90px;
+    }
     .content img
     {
         width:50%;
