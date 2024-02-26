@@ -28,7 +28,7 @@
 width: 90%;
 padding-left: 5%;
 padding-right: 5%;
-min-height: 90vh;
+min-height: 100vh;
 overflow: hidden;
 position: relative;
 }
@@ -513,7 +513,7 @@ footer{
     position: relative;
     display: inline-block;
     width: 90%;
-    height:20vh;
+    height:30vh;
     overflow: hidden;
    
     mask-image: linear-gradient(90deg,transparent,#00aeef 20%,#00aeef 80%,transparent);
@@ -621,7 +621,7 @@ form .btn2{
         height:40%
     }
     .scroll div{
-        width:100%;
+        width:800%;
         /* flex-wrap: wrap; */
         height: 5vh;
         padding:0;
@@ -629,8 +629,8 @@ form .btn2{
     .scroll img
     {
         width: 13%;
-        height:6vh;
-        padding:5%
+        height:5vh;
+        padding:2%
     }
     
     .contact-left
